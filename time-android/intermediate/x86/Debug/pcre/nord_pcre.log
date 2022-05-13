@@ -1,0 +1,25 @@
+﻿  ANDROID_HOME=C:\\Microsoft\AndroidSDK\25
+  ANT_HOME=C:\Program Files\Microsoft Visual Studio\2022\Community\Apps\apache-ant-1.9.3
+  JAVA_HOME=C:\Program Files\Android\jdk\jdk-8.0.302.8-hotspot\jdk8u302-b08
+  NDK_ROOT=C:\archive\android-ndk-r23b
+  pcre2_dfa_match.c
+  pcre2_context.c
+  In file included from src\pcre2_dfa_match.c:76:
+  In file included from src/config.h:4:
+C:\basis\operating-system\operating-system-android\_seed\../../operating-system-android\operating_system/third_private_config.h(7,10): fatal error : 'platform/config.h' file not found
+  #include "platform/config.h"
+           ^~~~~~~~~~~~~~~~~~~
+  1 error generated.
+  In file included from src\pcre2_context.c:43:
+  In file included from src/config.h:4:
+C:\basis\operating-system\operating-system-android\_seed\../../operating-system-android\operating_system/third_private_config.h(7,10): fatal error : 'platform/config.h' file not found
+  #include "platform/config.h"
+           ^~~~~~~~~~~~~~~~~~~
+  pcre2_config.c
+  1 error generated.
+  In file included from src\pcre2_config.c:42:
+  In file included from src/config.h:4:
+C:\basis\operating-system\operating-system-android\_seed\../../operating-system-android\operating_system/third_private_config.h(7,10): fatal error : 'platform/config.h' file not found
+  #include "platform/config.h"
+           ^~~~~~~~~~~~~~~~~~~
+  1 error generated.
