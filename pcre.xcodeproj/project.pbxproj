@@ -117,13 +117,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07D6A82D1B4CBB45004FEBC2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9AA5E5FC16F7C61B005C45CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,9 +228,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07D6A8441B4CBB45004FEBC2 /* Build configuration list for PBXNativeTarget "ios_pcre" */;
 			buildPhases = (
-				07D6A82A1B4CBB45004FEBC2 /* Sources */,
-				07D6A82D1B4CBB45004FEBC2 /* Frameworks */,
 				07D6A82F1B4CBB45004FEBC2 /* Headers */,
+				07D6A82A1B4CBB45004FEBC2 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -450,7 +442,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/operating-system/storage-$(PLATFORM_MODIFIER)/library",
-					
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -522,7 +513,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/operating-system/storage-$(PLATFORM_MODIFIER)/library",
-					
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-all_load";
