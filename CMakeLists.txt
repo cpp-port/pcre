@@ -676,7 +676,7 @@ IF(PCRE2_BUILD_TESTS)
   #
   FILE(WRITE ${PROJECT_BINARY_DIR}/CTestCustom.ctest
   "# This is a generated file.
-MESSAGE(\"When testing is complete, review test output in the
+MESSAGE(\"When testing is complete, reimpact test output in the
 \\\"${PROJECT_BINARY_DIR}/Testing/Temporary\\\" folder.\")
 MESSAGE(\" \")
 ")
