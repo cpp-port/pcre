@@ -1,4 +1,4 @@
-/*************************************************
+﻿/*************************************************
 *       Perl-Compatible Regular Expressions      *
 *************************************************/
 
@@ -53,7 +53,11 @@ don't change existing definitions of PCRE2_EXP_DECL. */
 
 #if defined(_WIN32) && !defined(PCRE2_STATIC)
 #  ifndef PCRE2_EXP_DECL
-#    define PCRE2_EXP_DECL  extern __declspec(dllimport)
+#      ifdef PCRE_LIBRARY // inserted by camilo on 2023-02-05 17:23 BRT
+#          define PCRE2_EXP_DECL  extern __declspec(dllexport)
+#      else
+#          define PCRE2_EXP_DECL  extern __declspec(dllimport)
+#      endif
 #  endif
 #endif
 
