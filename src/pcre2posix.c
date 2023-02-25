@@ -89,7 +89,7 @@ changed. This #define is a copy of the one in pcre2_internal.h. */
 
 /* PCRE2 headers */
 
-#include "port/pcre2.h"
+#include "pcre2.h"
 #include "pcre2posix.h"
 
 /* When compiling with the MSVC compiler, it is sometimes necessary to include

@@ -134,7 +134,7 @@ only if it is not already set. */
 /* Include the public PCRE2 header and the definitions of UCP character
 property values. This must follow the setting of PCRE2_EXP_DECL above. */
 
-#include "port/pcre2.h"
+#include "pcre2.h"
 #include "pcre2_ucp.h"
 
 /* When PCRE2 is compiled as a C++ library, the subject pointer can be replaced
