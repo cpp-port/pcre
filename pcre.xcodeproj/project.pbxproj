@@ -458,8 +458,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER) $(WorkspaceDir)/source/app";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include $(PROJECT_DIR)/include/$(PROJECT_NAME) $(PROJECT_DIR)/../../_/$(PROJECT_NAME) . $(WorkspaceDir)/source $(WorkspaceDir)/source/include $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include $(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER) . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER) $(WorkspaceDir)/source/app";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include $(PROJECT_DIR)/include/$(PROJECT_NAME) $(PROJECT_DIR)/../../_/$(PROJECT_NAME) . $(WorkspaceDir)/source $(WorkspaceDir)/source/include $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include $(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER) . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
@@ -528,8 +528,8 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER) $(WorkspaceDir)/source/app";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include $(PROJECT_DIR)/include/$(PROJECT_NAME) $(PROJECT_DIR)/../../_/$(PROJECT_NAME) . $(WorkspaceDir)/source $(WorkspaceDir)/source/include $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include $(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER) . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER) $(WorkspaceDir)/source/app";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include $(PROJECT_DIR)/include/$(PROJECT_NAME) $(PROJECT_DIR)/../../_/$(PROJECT_NAME) . $(WorkspaceDir)/source $(WorkspaceDir)/source/include $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include $(WorkspaceDir)/operating_system $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER) $(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER) . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/source/app/include";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
