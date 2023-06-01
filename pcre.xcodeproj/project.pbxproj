@@ -108,6 +108,8 @@
 		07EF5D4C1B72F09600863D39 /* pcre2posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre2posix.c; sourceTree = "<group>"; };
 		07EF5D4D1B72F09600863D39 /* pcre2posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre2posix.h; sourceTree = "<group>"; };
 		07EF5D9F1B72F17000863D39 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		9A8C03672A281F250049B167 /* _____debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "_____debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		9A8C03682A281F250049B167 /* _____release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "_____release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		9A996F4C232A58F300D6BA0F /* pcre2_script_run.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre2_script_run.c; sourceTree = "<group>"; };
 		9A996F4D232A58F300D6BA0F /* pcre2_find_bracket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre2_find_bracket.c; sourceTree = "<group>"; };
 		9A996F4E232A58F300D6BA0F /* pcre2_extuni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre2_extuni.c; sourceTree = "<group>"; };
@@ -183,6 +185,8 @@
 		9A1EDAE819C83CD000F5CCE8 /* pcre */ = {
 			isa = PBXGroup;
 			children = (
+				9A8C03672A281F250049B167 /* _____debug.xcconfig */,
+				9A8C03682A281F250049B167 /* _____release.xcconfig */,
 				07EF5D261B72F09600863D39 /* src */,
 			);
 			name = pcre;
@@ -391,6 +395,7 @@
 		};
 		9A1B2F8A16A2AF5C00875A94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8C03672A281F250049B167 /* _____debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -466,6 +471,7 @@
 		};
 		9A1B2F8B16A2AF5C00875A94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8C03682A281F250049B167 /* _____release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
