@@ -190,7 +190,6 @@
 				07EF5D261B72F09600863D39 /* src */,
 			);
 			name = pcre;
-			path = cpp;
 			sourceTree = "<group>";
 		};
 		9A4E846A1D1FD36E008A419B /* Products */ = {
