@@ -104,7 +104,7 @@ static SLJIT_INLINE void free_chunk(void *chunk, sljit_uw size)
 
 #ifdef MAP_JIT
 
-static SLJIT_INLINE int get_map_jit_flag()
+static SLJIT_INLINE int get_map_jit_flag(void)
 {
 #if TARGET_OS_OSX
 	/* On macOS systems, returns MAP_JIT if it is defined _and_ we're running on a version
