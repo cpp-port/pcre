@@ -279,7 +279,17 @@
 /* Instruction cache flush. */
 /****************************/
 
-#if (!defined SLJIT_CACHE_FLUSH && defined __has_builtin)
+#if defined __APPLE__
+
+/* Supported by all macs since Mac OS 10.5.
+   However, it does not work on non-jailbroken iOS devices,
+   although the compilation is successful. */
+void sys_icache_invalidate(void *start, unsigned long len);
+#define SLJIT_CACHE_FLUSH(from, to) \
+   sys_icache_invalidate((char*)(from), (char*)(to) - (char*)(from))
+
+
+#elif (!defined SLJIT_CACHE_FLUSH && defined __has_builtin)
 #if __has_builtin(__builtin___clear_cache)
 
 #define SLJIT_CACHE_FLUSH(from, to) \

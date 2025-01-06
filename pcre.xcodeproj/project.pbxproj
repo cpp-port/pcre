@@ -71,6 +71,16 @@
 		9AAC2148247571600013AB72 /* pcre2_find_bracket.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A996F4D232A58F300D6BA0F /* pcre2_find_bracket.c */; };
 		9AAC2149247571600013AB72 /* pcre2_fuzzsupport.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A996F50232A58F400D6BA0F /* pcre2_fuzzsupport.c */; };
 		9AAC214A247571600013AB72 /* pcre2_script_run.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A996F4C232A58F300D6BA0F /* pcre2_script_run.c */; };
+		9AB54C642D2B803D00AFBCB1 /* sljitUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB54C582D2B803D00AFBCB1 /* sljitUtils.c */; };
+		9AB54C672D2B803D00AFBCB1 /* sljitLir.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB54C462D2B803D00AFBCB1 /* sljitLir.c */; };
+		9AB54C6E2D2B803D00AFBCB1 /* sljitLir.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB54C452D2B803D00AFBCB1 /* sljitLir.h */; };
+		9AB54C6F2D2B803D00AFBCB1 /* sljitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB54C422D2B803D00AFBCB1 /* sljitConfig.h */; };
+		9AB54C702D2B803D00AFBCB1 /* sljitConfigInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB54C432D2B803D00AFBCB1 /* sljitConfigInternal.h */; };
+		9AB54C712D2B803D00AFBCB1 /* sljitLir.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB54C452D2B803D00AFBCB1 /* sljitLir.h */; };
+		9AB54C722D2B803D00AFBCB1 /* sljitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB54C422D2B803D00AFBCB1 /* sljitConfig.h */; };
+		9AB54C732D2B803D00AFBCB1 /* sljitConfigInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB54C432D2B803D00AFBCB1 /* sljitConfigInternal.h */; };
+		9AB54C7E2D2B803D00AFBCB1 /* sljitUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB54C582D2B803D00AFBCB1 /* sljitUtils.c */; };
+		9AB54C812D2B803D00AFBCB1 /* sljitLir.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB54C462D2B803D00AFBCB1 /* sljitLir.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +126,29 @@
 		9A996F4F232A58F400D6BA0F /* pcre2_convert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre2_convert.c; sourceTree = "<group>"; };
 		9A996F50232A58F400D6BA0F /* pcre2_fuzzsupport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre2_fuzzsupport.c; sourceTree = "<group>"; };
 		9AA539B119B763C400B9F861 /* libpcre.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libpcre.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB54C422D2B803D00AFBCB1 /* sljitConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sljitConfig.h; sourceTree = "<group>"; };
+		9AB54C432D2B803D00AFBCB1 /* sljitConfigInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sljitConfigInternal.h; sourceTree = "<group>"; };
+		9AB54C442D2B803D00AFBCB1 /* sljitExecAllocator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitExecAllocator.c; sourceTree = "<group>"; };
+		9AB54C452D2B803D00AFBCB1 /* sljitLir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sljitLir.h; sourceTree = "<group>"; };
+		9AB54C462D2B803D00AFBCB1 /* sljitLir.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitLir.c; sourceTree = "<group>"; };
+		9AB54C472D2B803D00AFBCB1 /* sljitNativeARM_32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeARM_32.c; sourceTree = "<group>"; };
+		9AB54C482D2B803D00AFBCB1 /* sljitNativeARM_64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeARM_64.c; sourceTree = "<group>"; };
+		9AB54C492D2B803D00AFBCB1 /* sljitNativeARM_T2_32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeARM_T2_32.c; sourceTree = "<group>"; };
+		9AB54C4A2D2B803D00AFBCB1 /* sljitNativeMIPS_32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeMIPS_32.c; sourceTree = "<group>"; };
+		9AB54C4B2D2B803D00AFBCB1 /* sljitNativeMIPS_64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeMIPS_64.c; sourceTree = "<group>"; };
+		9AB54C4C2D2B803D00AFBCB1 /* sljitNativeMIPS_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeMIPS_common.c; sourceTree = "<group>"; };
+		9AB54C4D2D2B803D00AFBCB1 /* sljitNativePPC_32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativePPC_32.c; sourceTree = "<group>"; };
+		9AB54C4E2D2B803D00AFBCB1 /* sljitNativePPC_64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativePPC_64.c; sourceTree = "<group>"; };
+		9AB54C4F2D2B803D00AFBCB1 /* sljitNativePPC_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativePPC_common.c; sourceTree = "<group>"; };
+		9AB54C502D2B803D00AFBCB1 /* sljitNativeSPARC_32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeSPARC_32.c; sourceTree = "<group>"; };
+		9AB54C512D2B803D00AFBCB1 /* sljitNativeSPARC_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeSPARC_common.c; sourceTree = "<group>"; };
+		9AB54C522D2B803D00AFBCB1 /* sljitNativeTILEGX_64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeTILEGX_64.c; sourceTree = "<group>"; };
+		9AB54C532D2B803D00AFBCB1 /* sljitNativeTILEGX-encoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "sljitNativeTILEGX-encoder.c"; sourceTree = "<group>"; };
+		9AB54C542D2B803D00AFBCB1 /* sljitNativeX86_32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeX86_32.c; sourceTree = "<group>"; };
+		9AB54C552D2B803D00AFBCB1 /* sljitNativeX86_64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeX86_64.c; sourceTree = "<group>"; };
+		9AB54C562D2B803D00AFBCB1 /* sljitNativeX86_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitNativeX86_common.c; sourceTree = "<group>"; };
+		9AB54C572D2B803D00AFBCB1 /* sljitProtExecAllocator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitProtExecAllocator.c; sourceTree = "<group>"; };
+		9AB54C582D2B803D00AFBCB1 /* sljitUtils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sljitUtils.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +165,7 @@
 		07EF5D261B72F09600863D39 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				9AB54C592D2B803D00AFBCB1 /* sljit */,
 				9A996F4F232A58F400D6BA0F /* pcre2_convert.c */,
 				9A996F4E232A58F300D6BA0F /* pcre2_extuni.c */,
 				9A996F4D232A58F300D6BA0F /* pcre2_find_bracket.c */,
@@ -201,6 +235,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9AB54C592D2B803D00AFBCB1 /* sljit */ = {
+			isa = PBXGroup;
+			children = (
+				9AB54C422D2B803D00AFBCB1 /* sljitConfig.h */,
+				9AB54C432D2B803D00AFBCB1 /* sljitConfigInternal.h */,
+				9AB54C442D2B803D00AFBCB1 /* sljitExecAllocator.c */,
+				9AB54C452D2B803D00AFBCB1 /* sljitLir.h */,
+				9AB54C462D2B803D00AFBCB1 /* sljitLir.c */,
+				9AB54C472D2B803D00AFBCB1 /* sljitNativeARM_32.c */,
+				9AB54C482D2B803D00AFBCB1 /* sljitNativeARM_64.c */,
+				9AB54C492D2B803D00AFBCB1 /* sljitNativeARM_T2_32.c */,
+				9AB54C4A2D2B803D00AFBCB1 /* sljitNativeMIPS_32.c */,
+				9AB54C4B2D2B803D00AFBCB1 /* sljitNativeMIPS_64.c */,
+				9AB54C4C2D2B803D00AFBCB1 /* sljitNativeMIPS_common.c */,
+				9AB54C4D2D2B803D00AFBCB1 /* sljitNativePPC_32.c */,
+				9AB54C4E2D2B803D00AFBCB1 /* sljitNativePPC_64.c */,
+				9AB54C4F2D2B803D00AFBCB1 /* sljitNativePPC_common.c */,
+				9AB54C502D2B803D00AFBCB1 /* sljitNativeSPARC_32.c */,
+				9AB54C512D2B803D00AFBCB1 /* sljitNativeSPARC_common.c */,
+				9AB54C522D2B803D00AFBCB1 /* sljitNativeTILEGX_64.c */,
+				9AB54C532D2B803D00AFBCB1 /* sljitNativeTILEGX-encoder.c */,
+				9AB54C542D2B803D00AFBCB1 /* sljitNativeX86_32.c */,
+				9AB54C552D2B803D00AFBCB1 /* sljitNativeX86_64.c */,
+				9AB54C562D2B803D00AFBCB1 /* sljitNativeX86_common.c */,
+				9AB54C572D2B803D00AFBCB1 /* sljitProtExecAllocator.c */,
+				9AB54C582D2B803D00AFBCB1 /* sljitUtils.c */,
+			);
+			path = sljit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -208,6 +272,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB54C6E2D2B803D00AFBCB1 /* sljitLir.h in Headers */,
+				9AB54C6F2D2B803D00AFBCB1 /* sljitConfig.h in Headers */,
+				9AB54C702D2B803D00AFBCB1 /* sljitConfigInternal.h in Headers */,
 				07EF5DA11B72F17000863D39 /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +283,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB54C712D2B803D00AFBCB1 /* sljitLir.h in Headers */,
+				9AB54C722D2B803D00AFBCB1 /* sljitConfig.h in Headers */,
+				9AB54C732D2B803D00AFBCB1 /* sljitConfigInternal.h in Headers */,
 				07EF5D811B72F09600863D39 /* pcre2_ucp.h in Headers */,
 				07EF5D871B72F09600863D39 /* pcre2posix.h in Headers */,
 				07EF5D6D1B72F09600863D39 /* pcre2_internal.h in Headers */,
@@ -307,6 +377,8 @@
 				9AAC2148247571600013AB72 /* pcre2_find_bracket.c in Sources */,
 				9AAC2149247571600013AB72 /* pcre2_fuzzsupport.c in Sources */,
 				9AAC214A247571600013AB72 /* pcre2_script_run.c in Sources */,
+				9AB54C642D2B803D00AFBCB1 /* sljitUtils.c in Sources */,
+				9AB54C672D2B803D00AFBCB1 /* sljitLir.c in Sources */,
 				07A4B11E1B76466800DA5C57 /* pcre2_chartables.c in Sources */,
 				07A4B11F1B76466800DA5C57 /* pcre2_auto_possess.c in Sources */,
 				07A4B1201B76466800DA5C57 /* pcre2_compile.c in Sources */,
@@ -343,6 +415,8 @@
 				9A996F52232A58F400D6BA0F /* pcre2_script_run.c in Sources */,
 				07EF5D771B72F09600863D39 /* pcre2_ord2utf.c in Sources */,
 				9A996F53232A58F400D6BA0F /* pcre2_find_bracket.c in Sources */,
+				9AB54C7E2D2B803D00AFBCB1 /* sljitUtils.c in Sources */,
+				9AB54C812D2B803D00AFBCB1 /* sljitLir.c in Sources */,
 				07EF5D6A1B72F09600863D39 /* pcre2_context.c in Sources */,
 				07EF5D7B1B72F09600863D39 /* pcre2_string_utils.c in Sources */,
 				07EF5D821B72F09600863D39 /* pcre2_valid_utf.c in Sources */,
