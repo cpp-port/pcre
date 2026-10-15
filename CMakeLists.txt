@@ -87,6 +87,18 @@
 # 2019-02-16 PH hacked to avoid CMP0026 policy issue (see comments below)
 project(pcre C)
 
+if(__REACTOS__)
+    set(BUILD_SHARED_LIBS ON CACHE BOOL "" FORCE)
+    set(PCRE2_BUILD_PCRE2_8 ON CACHE BOOL "" FORCE)
+    set(PCRE2_BUILD_PCRE2_16 OFF CACHE BOOL "" FORCE)
+    set(PCRE2_BUILD_PCRE2_32 OFF CACHE BOOL "" FORCE)
+    set(PCRE2_BUILD_PCRE2GREP OFF CACHE BOOL "" FORCE)
+    set(PCRE2_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+    set(PCRE2_SUPPORT_UNICODE ON CACHE BOOL "" FORCE)
+    set(PCRE2_SUPPORT_JIT OFF CACHE BOOL "" FORCE)
+    set(PCRE2_SHOW_REPORT OFF CACHE BOOL "" FORCE)
+endif()
+
 # Increased minimum to 2.8.0 to support newer add_test features.
 cmake_minimum_required(VERSION 3.16)
 
@@ -873,3 +885,12 @@ IF(PCRE2_SHOW_REPORT)
 ENDIF(PCRE2_SHOW_REPORT)
 
 # end CMakeLists.txt
+
+if(__REACTOS__)
+    set_target_properties(pcre PROPERTIES PREFIX "" DEBUG_POSTFIX "" OUTPUT_NAME pcre)
+    set_target_properties(pcre2-posix PROPERTIES EXCLUDE_FROM_ALL TRUE)
+    target_compile_definitions(pcre PRIVATE PCRE_LIBRARY)
+    if(MINGW)
+        target_link_options(pcre PRIVATE -static-libgcc)
+    endif()
+endif()
